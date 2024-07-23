@@ -13,7 +13,7 @@ router.post('/login', (req, res) => {
 
   // 사용자 정보 확인
   const existingUser = db.get('login').find({ id }).value();
-
+  console.log(existingUser)
   if (existingUser) {
     // 비밀번호가 일치하는지 확인
     if (existingUser.password === password) {
