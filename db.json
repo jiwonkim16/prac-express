@@ -7,6 +7,10 @@
     {
       "id": "123123@123123",
       "password": "123123123!"
+    },
+    {
+      "id" : "boeun@git.co.kr",
+      "password" : "1q2w3e4r!"
     }
   ],
   "reservoirRatio": [
@@ -205,7 +209,7 @@
       "lat": "36.47701233",
       "lng": "127.6751092",
       "role": "ROVER",
-      "region": "보은"
+      "region": "boeun"
     },
     {
       "id": "2",
@@ -214,7 +218,7 @@
       "lat": "36.4830429",
       "lng": "127.8345787",
       "role": "ROVER",
-      "region": "보은"
+      "region": "boeun"
     },
     {
       "id": "3",
@@ -223,7 +227,7 @@
       "lat": "36.59561158",
       "lng": "127.777736",
       "role": "ROVER",
-      "region": "보은"
+      "region": "boeun"
     }
   ],
   "images": [
