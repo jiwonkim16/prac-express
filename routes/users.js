@@ -1,6 +1,11 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+const jwt = require("jsonwebtoken");
 const router = express.Router();
 
+const SECRET_KEY = 'supernova'
+
+router.use(bodyParser.json())
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
@@ -13,13 +18,13 @@ router.post('/login', (req, res) => {
 
   // 사용자 정보 확인
   const existingUser = db.get('login').find({ id }).value();
-  console.log(existingUser)
+
   if (existingUser) {
     // 비밀번호가 일치하는지 확인
     if (existingUser.password === password) {
-      // 쿠키에 인증 정보를 설정
-      res.cookie('auth', { id }, { httpOnly: true });
-      return res.status(200).send('User logged in and authenticated');
+      // JWT Token 생성
+      const token = jwt.sign({id : id.split("@")[0]}, SECRET_KEY, {expiresIn : '1h'})
+      return res.status(200).json({message : 'User logged in and authenticated', token : token});
     } else {
       // 비밀번호가 일치하지 않으면 오류 반환
       return res.status(400).send('Incorrect password.');
