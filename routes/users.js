@@ -1,37 +1,44 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const jwt = require("jsonwebtoken");
+const { generateToken, generateRefreshToken, refreshToken } = require("../middleware/jwt");
 const router = express.Router();
 
-const SECRET_KEY = 'supernova'
+router.use(bodyParser.json());
 
-router.use(bodyParser.json())
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
-
-// 로그인 엔드포인트
 router.post('/login', (req, res) => {
   const { id, password } = req.body;
-  const db = req.db; // req 객체에서 데이터베이스 가져오기
+  const db = req.db;
 
-  // 사용자 정보 확인
   const existingUser = db.get('login').find({ id }).value();
-
   if (existingUser) {
-    // 비밀번호가 일치하는지 확인
     if (existingUser.password === password) {
-      // JWT Token 생성
-      const token = jwt.sign({id : id.split("@")[0]}, SECRET_KEY, {expiresIn : '1h'})
-      return res.status(200).json({message : 'User logged in and authenticated', token : token});
+      const accessToken = generateToken(existingUser);
+      const refreshTokenValue = generateRefreshToken(existingUser);
+
+      res.cookie('refreshToken', refreshTokenValue, { httpOnly: true, maxAge: 7 * 24 * 60 * 60 * 1000 });
+      res.status(200).json({ message: 'User logged in and authenticated', token: accessToken });
     } else {
-      // 비밀번호가 일치하지 않으면 오류 반환
       return res.status(400).send('Incorrect password.');
     }
   } else {
-    // 사용자가 존재하지 않으면 오류 반환
     return res.status(400).send('User does not exist.');
+  }
+});
+
+router.post('/refresh-token', (req, res) => {
+  const refreshTokenValue = req.cookies.refreshToken;
+
+  if (!refreshTokenValue) {
+    return res.status(401).send('Refresh token is missing');
+  }
+
+  const newAccessToken = refreshToken(refreshTokenValue);
+  if (newAccessToken) {
+
+    res.status(200).json({ token: newAccessToken });
+  } else {
+    console.log('Invalid or expired refresh token');
+    res.status(403).send('Refresh token is invalid or expired');
   }
 });
 

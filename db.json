@@ -9,175 +9,207 @@
       "password": "123123123!"
     },
     {
-      "id" : "boeun@git.co.kr",
-      "password" : "1q2w3e4r!"
+      "id": "boeun@git.co.kr",
+      "password": "1q2w3e4r!"
+    },
+    {
+      "id": "RC-43720@git.co.kr",
+      "password": "1q2w3e4r!"
     }
   ],
   "reservoirRatio": [
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 1,
       "elevation": 229.2,
       "storageRatio": 0
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 2,
       "elevation": 230,
       "storageRatio": 0.24
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 3,
       "elevation": 231,
       "storageRatio": 0.64
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 4,
       "elevation": 232,
       "storageRatio": 1.17
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 5,
       "elevation": 233,
       "storageRatio": 1.79
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 6,
       "elevation": 234,
       "storageRatio": 2.5
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 7,
       "elevation": 235,
       "storageRatio": 3.28
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 8,
       "elevation": 236,
       "storageRatio": 4.15
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 9,
       "elevation": 237,
       "storageRatio": 5.11
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 10,
       "elevation": 238,
       "storageRatio": 6.17
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 11,
       "elevation": 239,
       "storageRatio": 7.43
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 12,
       "elevation": 240,
       "storageRatio": 9
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 13,
       "elevation": 241,
       "storageRatio": 10.91
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 14,
       "elevation": 242,
       "storageRatio": 13.18
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 15,
       "elevation": 243,
       "storageRatio": 15.96
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 16,
       "elevation": 244,
       "storageRatio": 19.27
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 17,
       "elevation": 245,
       "storageRatio": 23.15
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 18,
       "elevation": 246,
       "storageRatio": 27.56
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 19,
       "elevation": 247,
       "storageRatio": 32.4
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 20,
       "elevation": 248,
       "storageRatio": 37.76
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 21,
       "elevation": 249,
       "storageRatio": 43.67
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 22,
       "elevation": 250,
       "storageRatio": 50.45
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 23,
       "elevation": 251,
       "storageRatio": 58.43
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 24,
       "elevation": 252,
       "storageRatio": 67.22
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 25,
       "elevation": 253,
       "storageRatio": 76.41
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 26,
       "elevation": 254,
       "storageRatio": 85.97
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 27,
       "elevation": 255,
       "storageRatio": 95.9
     },
     {
       "name": "비룡저수지",
+      "uid": "RC-43720-R0-01",
       "index": 28,
       "elevation": 255.4,
       "storageRatio": 100
@@ -186,10 +218,58 @@
   "reservoirInfo": [
     {
       "name": "비룡저수지",
-      "id": "RC-43720-R0-01",
+      "uid": "RC-43720-R0-01",
       "region": "보은",
       "lat": 36.4830429,
       "lng": 127.83457866,
+      "previousAltitude": [
+        250.989,
+        251.556,
+        254.765,
+        258.434,
+        252.345,
+        257.453,
+        251.345
+      ]
+    },
+    {
+      "name": "보청저수지",
+      "uid": "RC-43720-R0-02",
+      "region": "보은",
+      "lat": 36.47701233,
+      "lng": 127.6751092,
+      "previousAltitude": [
+        250.989,
+        251.556,
+        254.765,
+        258.434,
+        252.345,
+        257.453,
+        251.345
+      ]
+    },
+    {
+      "name": "대원저수지",
+      "uid": "RC-43720-R0-03",
+      "region": "보은",
+      "lat": 36.59561158,
+      "lng": 127.777736,
+      "previousAltitude": [
+        250.989,
+        251.556,
+        254.765,
+        258.434,
+        252.345,
+        257.453,
+        251.345
+      ]
+    },
+    {
+      "name": "창산저수지",
+      "uid": "RC-43730-01-01",
+      "region": "괴산",
+      "lat": 36.679934,
+      "lng": 127.6934745,
       "previousAltitude": [
         250.989,
         251.556,
@@ -203,31 +283,49 @@
   ],
   "device": [
     {
-      "id": "1",
-      "uuid": "E4-5F-01-33-9F-98",
+      "uid": "RC-43720-R0-02",
       "name": "보청저수지",
       "lat": "36.47701233",
       "lng": "127.6751092",
       "role": "ROVER",
-      "region": "boeun"
+      "region": "boeun",
+      "address": "충북 보은"
     },
     {
-      "id": "2",
-      "uuid": "RC-43720-R0-01",
+      "uid": "RC-43720-R0-01",
       "name": "비룡저수지",
       "lat": "36.4830429",
       "lng": "127.8345787",
       "role": "ROVER",
-      "region": "boeun"
+      "region": "boeun",
+      "address": "충북 보은"
     },
     {
-      "id": "3",
-      "uuid": "E4-5F-01-33-92-E1",
+      "uid": "RC-43720-R0-03",
       "name": "대원저수지",
       "lat": "36.59561158",
       "lng": "127.777736",
       "role": "ROVER",
-      "region": "boeun"
+      "region": "boeun",
+      "address": "충북 보은"
+    },
+    {
+      "uid": "RC-43760-R0-01",
+      "name": "창산저수지",
+      "lat": "36.32423",
+      "lng": "127.235234",
+      "role": "ROVER ",
+      "region": "goesan",
+      "address": "충북 괴산"
+    },
+    {
+      "uid": "RC-43130-R0-01",
+      "name": "상촌저수지",
+      "lat": "36.65553",
+      "lng": "127.34534",
+      "role": "ROVER",
+      "region": "chungju",
+      "address": "충북 충주"
     }
   ],
   "images": [
@@ -242,6 +340,10 @@
     {
       "id": 1721722837191,
       "filePath": "/images/비룡저수지.webp"
+    },
+    {
+      "id": 1722293773715,
+      "filePath": "/images/창산저수지.webp"
     }
   ]
 }

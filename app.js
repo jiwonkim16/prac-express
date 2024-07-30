@@ -13,7 +13,7 @@ const router = jsonServer.router('./db.json'); // JSON Server 라우터 생성
 const port = 3001;
 
 app.use(cors({
-  origin: 'http://localhost:3033', // 클라이언트 애플리케이션의 도메인
+  origin: 'http://localhost:3034', // 클라이언트 애플리케이션의 도메인
   credentials: true // 쿠키를 허용하려면 true로 설정
 }));
 app.use(express.json());
