@@ -34,12 +34,26 @@ router.post('/refresh-token', (req, res) => {
 
   const newAccessToken = refreshToken(refreshTokenValue);
   if (newAccessToken) {
-
     res.status(200).json({ token: newAccessToken });
   } else {
     console.log('Invalid or expired refresh token');
     res.status(403).send('Refresh token is invalid or expired');
   }
 });
+
+router.post('/signup', (req, res, next)=>{
+  const user = req.body
+  const id = user.id
+  const db = req.db
+
+  const existingUser = db.get('login').find({ id }).value();
+  if(existingUser) {
+      return res.status(400).json({message : "존재하는 ID 입니다"})
+    } else{
+      db.get('login').push(user).write()
+      return res.status(200).json({message : "회원가입 완료"})
+    }
+})
+
 
 module.exports = router;

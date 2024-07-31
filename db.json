@@ -2,19 +2,20 @@
   "login": [
     {
       "id": "admin@git.co.kr",
-      "password": "1q2w3e4r!"
+      "password": "1q2w3e4r!",
+      "username": "admin"
     },
     {
-      "id": "123123@123123",
-      "password": "123123123!"
+      "id": "admin1@git.co.kr",
+      "username": "1qafdafsd",
+      "password": "1q2w3e4r!",
+      "confirmPassword": "1q2w3e4r!"
     },
     {
-      "id": "boeun@git.co.kr",
-      "password": "1q2w3e4r!"
-    },
-    {
-      "id": "RC-43720@git.co.kr",
-      "password": "1q2w3e4r!"
+      "id": "admin2@git.co.kr",
+      "username": "asfdsfsdf",
+      "password": "1q2w3e4r!",
+      "confirmPassword": "1q2w3e4r!"
     }
   ],
   "reservoirRatio": [
@@ -285,47 +286,52 @@
     {
       "uid": "RC-43720-R0-02",
       "name": "보청저수지",
-      "lat": "36.47701233",
-      "lng": "127.6751092",
+      "lat": 36.47701233,
+      "lng": 127.6751092,
       "role": "ROVER",
       "region": "boeun",
-      "address": "충북 보은"
+      "address": "충북 보은",
+      "hei": 123
     },
     {
       "uid": "RC-43720-R0-01",
       "name": "비룡저수지",
-      "lat": "36.4830429",
-      "lng": "127.8345787",
+      "lat": 36.4830429,
+      "lng": 127.8345787,
       "role": "ROVER",
       "region": "boeun",
-      "address": "충북 보은"
+      "address": "충북 보은",
+      "hei": 456
     },
     {
       "uid": "RC-43720-R0-03",
       "name": "대원저수지",
-      "lat": "36.59561158",
-      "lng": "127.777736",
+      "lat": 36.59561158,
+      "lng": 127.777736,
       "role": "ROVER",
       "region": "boeun",
-      "address": "충북 보은"
-    },
-    {
-      "uid": "RC-43760-R0-01",
-      "name": "창산저수지",
-      "lat": "36.32423",
-      "lng": "127.235234",
-      "role": "ROVER ",
-      "region": "goesan",
-      "address": "충북 괴산"
+      "address": "충북 보은",
+      "hei": 345
     },
     {
       "uid": "RC-43130-R0-01",
       "name": "상촌저수지",
-      "lat": "36.65553",
-      "lng": "127.34534",
+      "lat": 36.65553,
+      "lng": 127.34534,
       "role": "ROVER",
       "region": "chungju",
-      "address": "충북 충주"
+      "address": "충북 충주",
+      "hei": 123
+    },
+    {
+      "uid": "RC-43760-R0-01",
+      "name": "창산저수지",
+      "lat": 36.345634,
+      "lng": 127.543665,
+      "hei": 123,
+      "role": "ROVER",
+      "address": "충북 괴산군",
+      "region": "goesan"
     }
   ],
   "images": [
@@ -340,10 +346,6 @@
     {
       "id": 1721722837191,
       "filePath": "/images/비룡저수지.webp"
-    },
-    {
-      "id": 1722293773715,
-      "filePath": "/images/창산저수지.webp"
     }
   ]
 }
