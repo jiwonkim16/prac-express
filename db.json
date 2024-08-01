@@ -6,14 +6,20 @@
       "username": "admin"
     },
     {
-      "id": "admin1@git.co.kr",
-      "username": "1qafdafsd",
+      "id": "boeun@git.co.kr",
+      "username": "boeun",
+      "password": "1q2w3e4r!",
+      "confirmPassword": "1q2w3e4r!"
+    },
+    {
+      "id": "goesan@git.co.kr",
+      "username": "1sdfa",
       "password": "1q2w3e4r!",
       "confirmPassword": "1q2w3e4r!"
     },
     {
       "id": "admin2@git.co.kr",
-      "username": "asfdsfsdf",
+      "username": "gosam",
       "password": "1q2w3e4r!",
       "confirmPassword": "1q2w3e4r!"
     }
